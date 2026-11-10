@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Помощь в учебе | @lucky_nikis</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Plus Jakarta Sans & Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: {
+                            50: '#FFFDF9',
+                            100: '#FFF9F3',
+                            200: '#FFF2E6',
+                            300: '#FDEAD8',
+                        },
+                        softpink: {
+                            50: '#FFF5F7',
+                            100: '#FCE4EC',
+                            200: '#F8BBD0',
+                            300: '#F48FB1',
+                            400: '#F06292',
+                            500: '#EC407A',
+                            600: '#D81B60',
+                            700: '#C2185B',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px -5px rgba(244, 143, 177, 0.15)',
+                        'glow': '0 0 25px rgba(236, 64, 122, 0.35)',
+                        'card': '0 8px 25px rgba(216, 27, 96, 0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #FFFDF9 0%, #FFF5F7 50%, #FCE4EC 100%);
+            background-attachment: fixed;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(248, 187, 208, 0.4);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #D81B60 0%, #EC407A 50%, #F48FB1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-gradient {
+            background: linear-gradient(135deg, #EC407A 0%, #D81B60 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-gradient:hover {
+            background: linear-gradient(135deg, #D81B60 0%, #C2185B 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(216, 27, 96, 0.3);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="text-gray-800 min-h-screen flex flex-col justify-between selection:bg-softpink-200 selection:text-softpink-700">
+
+    <!-- Sticky Navigation -->
+    <header class="sticky top-0 z-50 glass-card border-b border-softpink-200/50 px-4 lg:px-8 py-3 transition-all duration-300">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2 font-heading font-extrabold text-xl text-softpink-600 tracking-tight">
+                <span class="text-2xl">🩷</span> StudyAssist
+            </a>
+            <nav class="hidden md:flex items-center space-x-6 font-medium text-sm text-gray-700">
+                <a href="#about" class="hover:text-softpink-600 transition-colors">Обо мне</a>
+                <a href="#prices" class="hover:text-softpink-600 transition-colors">Цены</a>
+                <a href="#advantages" class="hover:text-softpink-600 transition-colors">Плюсы</a>
+                <a href="#contacts" class="hover:text-softpink-600 transition-colors">Контакты</a>
+            </nav>
+            <a href="https://t.me/lucky_nikis" target="_blank" rel="noopener noreferrer" 
+               class="btn-gradient text-white font-semibold px-4 py-2 rounded-full text-sm flex items-center gap-2 shadow-md hover:shadow-softpink-500/30">
+                <i class="fa-brands fa-telegram text-lg"></i>
+                <span>Написать в Telegram</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative pt-12 pb-20 px-4 overflow-hidden">
+            <!-- Decorative Background Orbs -->
+            <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-softpink-200/40 to-cream-200/60 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+            <div class="max-w-4xl mx-auto text-center space-y-6">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-softpink-100/80 border border-softpink-200 text-softpink-700 text-xs md:text-sm font-semibold tracking-wide animate-float">
+                    <span>✨ Твой надежный академический ассистент</span>
+                </div>
+                
+                <h1 class="font-heading font-extrabold text-3xl md:text-5xl lg:text-6xl leading-tight text-gray-900">
+                    Помогу сделать вашу учебу легче <span class="inline-block animate-bounce">🩷🙌</span>
+                </h1>
+
+                <p class="text-base md:text-xl text-gray-600 max-w-2xl mx-auto font-normal leading-relaxed">
+                    Быстро, качественно и без лишней тревоги. Возьму на себя любые учебные задачи, чтобы вы могли отдохнуть!
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://t.me/lucky_nikis" target="_blank" rel="noopener noreferrer" 
+                       class="w-full sm:w-auto btn-gradient text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-telegram text-2xl"></i>
+                        <span>Написать в Telegram (@lucky_nikis)</span>
+                    </a>
+                </div>
+
+                <!-- VPN Warning Badge -->
+                <div class="inline-flex items-center gap-2 text-xs md:text-sm text-softpink-700 bg-white/60 backdrop-blur px-3 py-1.5 rounded-full border border-softpink-200">
+                    <i class="fa-solid fa-shield-halved text-softpink-500"></i>
+                    <span>Обратите внимание: сайт работает стабильно только с VPN</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-12 px-4 max-w-5xl mx-auto">
+            <div class="glass-card rounded-3xl p-6 md:p-10 shadow-card relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-softpink-100 rounded-full blur-2xl -z-10"></div>
+                
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <!-- Avatar / Badge Icon -->
+                    <div class="flex-shrink-0 relative">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-tr from-softpink-200 to-cream-200 p-1 shadow-inner flex items-center justify-center">
+                            <div class="w-full h-full rounded-full bg-white flex flex-col items-center justify-center text-softpink-600 text-4xl shadow-sm">
+                                🎓
+                                <span class="text-xs font-bold mt-1 text-gray-500 font-sans">ВШЭ & ФУ</span>
+                            </div>
+                        </div>
+                        <span class="absolute bottom-1 right-1 bg-softpink-500 text-white text-xs px-2.5 py-1 rounded-full font-bold shadow">
+                            c 2021 г.
+                        </span>
+                    </div>
+
+                    <!-- Text Details -->
+                    <div class="space-y-4 text-center md:text-left">
+                        <div class="flex items-center justify-center md:justify-start gap-2">
+                            <span class="text-2xl">📚</span>
+                            <h2 class="font-heading text-2xl md:text-3xl font-bold text-gray-900">Обо мне</h2>
+                        </div>
+                        <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+                            Окончила <strong>Финансовый университет при правительстве РФ</strong> в 2025 году, училась на специальности «Экономика и бизнес».
+                        </p>
+                        <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+                            Профессионально занимаюсь репетиторством и помощью студентам с <strong>2021 года</strong>. В настоящее время продолжаю обучение в <strong>магистратуре во ВШЭ (Высшая школа экономики)</strong>.
+                        </p>
+                        <div class="pt-2 flex flex-wrap gap-2 justify-center md:justify-start">
+                            <span class="px-3 py-1 bg-softpink-100 text-softpink-700 text-xs font-semibold rounded-lg">Высшее экономическое</span>
+                            <span class="px-3 py-1 bg-cream-200 text-gray-700 text-xs font-semibold rounded-lg">Магистратура ВШЭ</span>
+                            <span class="px-3 py-1 bg-softpink-100 text-softpink-700 text-xs font-semibold rounded-lg">4+ года опыта</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services & Prices Section -->
+        <section id="prices" class="py-12 px-4 max-w-6xl mx-auto">
+            <div class="text-center mb-12 space-y-2">
+                <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-gray-900 flex items-center justify-center gap-3">
+                    <span>💵</span> Цены и Услуги
+                </h2>
+                <p class="text-gray-600 max-w-md mx-auto">Прозрачные цены без скрытых переплат. Все работы проходят строгую проверку качества.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <!-- Service Card 1 -->
+                <div class="glass-card rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 relative group border-t-4 border-t-softpink-400">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-3xl">🎀</span>
+                            <span class="text-xs uppercase font-bold tracking-wider px-2.5 py-1 bg-softpink-100 text-softpink-700 rounded-full">Популярное</span>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Презентации</h3>
+                        <div class="text-2xl font-extrabold text-softpink-600 mb-4">от 599 ₽</div>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-softpink-500 mt-0.5"></i>
+                                <span>По всем учебным дисциплинам</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-softpink-500 mt-0.5"></i>
+                                <span>Адекватный подбор источников</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-softpink-500 mt-0.5"></i>
+                                <span>Возможность вставить видео</span>
+                            </li>
+                            <li class="flex items-start gap-2 font-semibold text-softpink-700">
+                                <i class="fa-solid fa-star text-softpink-500 mt-0.5"></i>
+                                <span>БЕЗ ИИ! Полностью вручную</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://t.me/lucky_nikis" target="_blank" rel="noopener noreferrer" 
+                       class="w-full py-3 rounded-2xl bg-softpink-100 hover:bg-softpink-500 hover:text-white text-softpink-700 font-bold text-sm text-center transition-colors flex items-center justify-center gap-2">
+                        Заказать презентацию
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="glass-card rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 relative group border-t-4 border-t-softpink-600 shadow-soft">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-3xl">🎀</span>
+                            <span class="text-xs uppercase font-bold tracking-wider px-2.5 py-1 bg-softpink-600 text-white rounded-full">Топ выбор</span>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Рефераты / Доклады</h3>
+                        <div class="text-2xl font-extrabold text-softpink-600 mb-4">от 999 ₽</div>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-softpink-500 mt-0.5"></i>
+                                <span>Строго по вашим требованиям</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-softpink-500 mt-0.5"></i>
+                                <span>Использование ваших книг и методичек</span>
+                            </li>
+                            <li class="flex items-start gap-2 font-semibold text-softpink-700">
+                                <i class="fa-solid fa-shield-cat text-softpink-500 mt-0.5"></i>
+                                <span>Прикрепляю официальную проверку на ИИ</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://t.me/lucky_nikis" target="_blank" rel="noopener noreferrer" 
+                       class="w-full py-3 rounded-2xl btn-gradient text-white font-bold text-sm text-center shadow-md flex items-center justify-center gap-2">
+                        Заказать реферат
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="glass-card rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 hover:-translate-y-1 relative group border-t-4 border-t-softpink-400">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-3xl">🎀</span>
+                            <span class="text-xs uppercase font-bold tracking-wider px-2.5 py-1 bg-cream-300 text-gray-800 rounded-full">Онлайн</span>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Зачеты / Экзамены / ДЗ</h3>
+                        <div class="text-2xl font-extrabold text-softpink-600 mb-4">от 1199 ₽</div>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-softpink-500 mt-0.5"></i>
+                                <span>Решение в режиме реального времени (онлайн)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-softpink-500 mt-0.5"></i>
+                                <span>Постоянно на связи в процессе</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-camera text-softpink-500 mt-0.5"></i>
+                                <span>С вас — только отправить фото задания</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://t.me/lucky_nikis" target="_blank" rel="noopener noreferrer" 
+                       class="w-full py-3 rounded-2xl bg-softpink-100 hover:bg-softpink-500 hover:text-white text-softpink-700 font-bold text-sm text-center transition-colors flex items-center justify-center gap-2">
+                        Помощь на экзамене
+                    </a>
+                </div>
+            </div>
+
+            <!-- Other Services -->
+            <div class="mt-8 glass-card rounded-2xl p-6 max-w-3xl mx-auto border border-softpink-200">
+                <h3 class="font-heading text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <span>🔍</span> Другие популярные услуги:
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="flex items-center gap-3 p-3 rounded-xl bg-white/80 shadow-sm border border-softpink-100">
+                        <span class="text-2xl">🗒️</span>
+                        <div>
+                            <div class="font-bold text-gray-800">Конспекты от руки</div>
+                            <div class="text-xs text-gray-500">Аккуратный и четкий почерк</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-xl bg-white/80 shadow-sm border border-softpink-100">
+                        <span class="text-2xl">🗒️</span>
+                        <div>
+                            <div class="font-bold text-gray-800">Диктовка предметов</div>
+                            <div class="text-xs text-gray-500">Помощь во время сдачи</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section id="advantages" class="py-12 px-4 max-w-5xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="font-heading text-3xl font-extrabold text-gray-900">Почему выбирают меня?</h2>
+                <p class="text-gray-600 text-sm mt-1">Гарантирую высокое качество и полное спокойствие</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <!-- Advantage Item -->
+                <div class="glass-card p-5 rounded-2xl flex items-start gap-3 hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 rounded-full bg-softpink-100 text-softpink-600 flex items-center justify-center text-xl flex-shrink-0">
+                        👍
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-base">Днём и НОЧЬЮ</h4>
+                        <p class="text-xs text-gray-600 mt-1">Работаю в любое время суток. Экстренные заказы — не проблема.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl flex items-start gap-3 hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 rounded-full bg-softpink-100 text-softpink-600 flex items-center justify-center text-xl flex-shrink-0">
+                        👍
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-base">Сдаю до дедлайна</h4>
+                        <p class="text-xs text-gray-600 mt-1">Всегда укладываюсь в указанные вами сроки без задержек.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl flex items-start gap-3 hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 rounded-full bg-softpink-100 text-softpink-600 flex items-center justify-center text-xl flex-shrink-0">
+                        👍
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-base">Правки бесплатно</h4>
+                        <p class="text-xs text-gray-600 mt-1">Если преподаватель попросит дополнения — доработаю бесплатно.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl flex items-start gap-3 hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 rounded-full bg-softpink-100 text-softpink-600 flex items-center justify-center text-xl flex-shrink-0">
+                        👍
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-base">Полная анонимность</h4>
+                        <p class="text-xs text-gray-600 mt-1">Ваши личные данные и факт обращения никому не разглашаются.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl flex items-start gap-3 hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 rounded-full bg-softpink-100 text-softpink-600 flex items-center justify-center text-xl flex-shrink-0">
+                        👍
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-base">Все работы уникальны</h4>
+                        <p class="text-xs text-gray-600 mt-1">Каждый материал готовится индивидуально под ваши критерии.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl flex items-start gap-3 hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 rounded-full bg-softpink-100 text-softpink-600 flex items-center justify-center text-xl flex-shrink-0">
+                        👍
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-base">Проверка на ИИ</h4>
+                        <p class="text-xs text-gray-600 mt-1">К готовой работе обязательно прикладывается скрин проверки.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slogan & Contact Banner -->
+        <section id="contacts" class="py-16 px-4 max-w-4xl mx-auto">
+            <div class="glass-card rounded-3xl p-8 md:p-12 text-center relative overflow-hidden bg-gradient-to-br from-white/90 via-softpink-50/80 to-softpink-100/90 shadow-glow border-2 border-softpink-200">
+                <div class="text-4xl mb-4">🦦</div>
+                <h2 class="font-heading font-extrabold text-2xl md:text-4xl text-gray-900 mb-4">
+                    Пока другие мучаются — ты делегируешь❕
+                </h2>
+                <p class="text-lg md:text-xl text-softpink-700 font-semibold mb-8">
+                    Пиши, я всегда на связи 🙌
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://t.me/lucky_nikis" target="_blank" rel="noopener noreferrer" 
+                       class="w-full sm:w-auto btn-gradient text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-telegram text-2xl"></i>
+                        <span>Написать @lucky_nikis</span>
+                    </a>
+                </div>
+
+                <div class="mt-6 text-xs text-gray-500 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-wifi"></i>
+                    <span>Напоминание: Сайт доступен при включенном VPN</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white/60 border-t border-softpink-200/60 py-8 px-4 text-center">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <!-- Tags -->
+            <div class="flex flex-wrap justify-center gap-2 text-xs text-softpink-600 font-medium">
+                <span>#Написаниеработ</span>
+                <span>•</span>
+                <span>#Конспекты</span>
+                <span>•</span>
+                <span>#Диктовка</span>
+                <span>•</span>
+                <span>#Помощь</span>
+                <span>•</span>
+                <span>#ДЗ</span>
+                <span>•</span>
+                <span>#Домашки</span>
+            </div>
+
+            <p class="text-xs text-gray-500">
+                © 2026 StudyAssist by @lucky_nikis. Все права защищены. Помощь студентам и школьникам.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
